@@ -38,6 +38,7 @@ export default function App() {
       </div>
 
 
+
       {/* this is Short circuit, if this true it will show everything if flase then nothing*/}
       {/*Don't mutate the state manually */}
       {
@@ -49,6 +50,9 @@ export default function App() {
               <Condition className={step >= 3 ? "#7950f2" : ""} text="3" />
             </div>
 
+            <Message step={step}>
+              {messages[step - 1]}
+            </Message>
 
             <div className="buttons">
               <Button bgColor={"#7950f2"} textcolor={"#ffff"} onClick={handlePrev}><span>◀️</span>Previous</Button>
