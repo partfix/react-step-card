@@ -79,7 +79,6 @@ function Condition({ className, text }) {
   )
 }
 
-
 function Message({ children, step }) {
   return (
     <p className="message">
