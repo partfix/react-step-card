@@ -37,8 +37,6 @@ export default function App() {
         &times;
       </div>
 
-
-
       {/* this is Short circuit, if this true it will show everything if flase then nothing*/}
       {/*Don't mutate the state manually */}
       {
