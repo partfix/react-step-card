@@ -36,9 +36,8 @@ export default function App() {
       <div className="close" onClick={() => setIsOpen((currOpen) => !currOpen)}>
         &times;
       </div>
-
-      {/* this is Short circuit, if this true it will show everything if flase then nothing*/}
       {/*Don't mutate the state manually */}
+      {/* this is Short circuit, if this true it will show everything if flase then nothing*/}
       {
         isopen && (<div>
           <div className="steps">
